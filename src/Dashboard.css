@@ -1,0 +1,79 @@
+.dashboard-container {
+  text-align: center;
+  background-color: #282c34; /* Same background color as the App header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* White text color like the App header */
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #20232a; /* Slightly darker shade for the header */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-btn, .dashboard-logout-btn {
+  background-color: #61dafb; /* Matching the App-link color */
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.dashboard-btn:hover, .dashboard-logout-btn:hover {
+  background-color: #21a1f1; /* Darker hover effect */
+}
+
+#formpotion {
+  margin-top: 20px;
+}
+
+#tableright {
+  width: 80%;
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #20232a;
+  color: #61dafb;
+}
+
+td {
+  background-color: #282c34;
+  color: white;
+}
+
+.dashboard-footer {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 20px;
+  }
+
+  #tableright {
+    width: 100%;
+    padding: 0 20px;
+  }
+}

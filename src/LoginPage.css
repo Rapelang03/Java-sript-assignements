@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d5f2783;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('../public/name.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Shared Container Styles (Login and Sign Up) */
+.login-container,
+.signin-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color:#30772894;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px #1a381b;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px #1a381b;
+    font-weight: bold;
+}
+
+/* Form Header */
+form h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-shadow: 2px 2px #1a381b;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #a4bba1;
+    border-radius: 5px;
+    background-color: #e6efe6;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles (Shared for Login and Sign Up) */
+button.login-btn,
+button.signin-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #588c58;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button.login-btn:hover,
+button.signin-btn:hover {
+    background-color: #3e6b3e;
+}
+
+/* Extra Links */
+.extra-links {
+    margin-top: 15px;
+    color: white;
+}
+
+.extra-links a {
+    color: #a4bba1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Style */
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .login-container,
+    .signin-container {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
